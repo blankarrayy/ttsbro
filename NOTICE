@@ -1,0 +1,89 @@
+TTS Bro - n8n Community Node for Text-to-Speech
+Copyright 2024 TTS Bro Contributors
+
+This product includes software and models developed by third parties.
+
+================================================================================
+sherpa-onnx
+Source: https://github.com/k2-fsa/sherpa-onnx
+License: Apache License 2.0
+================================================================================
+Copyright 2022-2024 Fangjun Kuang, Xiaomi Corporation, and the sherpa-onnx
+contributors.
+
+Licensed under the Apache License, Version 2.0.
+sherpa-onnx provides speech-to-text, text-to-speech, speaker diarization,
+and voice activity detection using next-gen Kaldi with ONNX Runtime. This
+project uses sherpa-onnx for TTS inference via WebAssembly.
+
+================================================================================
+Kokoro TTS Model (kokoro-82m)
+Source: https://huggingface.co/hexgrad/Kokoro-82M
+License: Apache License 2.0
+================================================================================
+Copyright 2024 hexgrad
+
+The Kokoro model is developed by hexgrad and distributed via k2-fsa for usage
+with sherpa-onnx.
+Model: kokoro-en-v0_19 (English multi-voice TTS)
+
+Licensed under the Apache License, Version 2.0.
+
+Kokoro is a frontier TTS model with 82 million parameters.
+
+================================================================================
+eSpeak NG Data (via Kokoro/sherpa-onnx)
+Source: https://github.com/espeak-ng/espeak-ng
+License: GNU General Public License v3.0 (GPLv3)
+================================================================================
+Copyright 1995-2018 various contributors.
+
+This software/model bundle includes data derived from eSpeak NG, which is
+licensed under the GNU General Public License version 3.
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+================================================================================
+ONNX Runtime Web
+Source: https://github.com/microsoft/onnxruntime
+License: MIT License
+================================================================================
+Copyright (c) Microsoft Corporation
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+================================================================================
+n8n (n8n-workflow)
+Source: https://github.com/n8n-io/n8n
+License: Sustainable Use License (Fair-code) / Apache 2.0 (for older versions)
+================================================================================
+Copyright 2023 n8n GmbH
+
+This project uses `n8n-workflow` as a peer dependency.

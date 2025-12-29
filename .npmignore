@@ -1,0 +1,16 @@
+# Ignore dev and docker files from npm package
+nodes/
+src/
+scripts/
+.github/
+.vscode/
+.git/
+.gitignore
+.eslintrc.js
+.prettierrc
+Dockerfile
+docker-compose.yml
+gulpfile.js
+tsconfig.json
+*.ts
+!*.d.ts

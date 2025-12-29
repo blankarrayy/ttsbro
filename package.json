@@ -1,0 +1,68 @@
+{
+    "name": "n8n-nodes-ttsbro",
+    "version": "0.1.6",
+    "description": "Text-to-Speech n8n node using sherpa-onnx Kokoro model",
+    "keywords": [
+        "n8n-community-node-package",
+        "n8n",
+        "tts",
+        "text-to-speech",
+        "kokoro",
+        "sherpa-onnx",
+        "wasm",
+        "ttsbro"
+    ],
+    "license": "Apache-2.0",
+    "homepage": "https://github.com/blankarrayy/n8n-nodes-ttsbro",
+    "author": {
+        "name": "Blankarray",
+        "email": "abhiram.bvb@gmail.com"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/blankarrayy/n8n-nodes-ttsbro.git"
+    },
+    "engines": {
+        "node": ">=18.10"
+    },
+    "main": "dist/nodes/TtsBro/TtsBro.node.js",
+    "types": "dist/nodes/TtsBro/TtsBro.node.d.ts",
+    "scripts": {
+        "build": "tsc && gulp build:icons",
+        "dev": "tsc --watch",
+        "format": "prettier nodes --write",
+        "lint": "eslint nodes --ext .ts",
+        "lint:fix": "eslint nodes --ext .ts --fix",
+        "prepublishOnly": "npm run build",
+        "download-model": "curl -SL -O https://github.com/k2-fsa/sherpa-onnx/releases/download/tts-models/kokoro-int8-en-v0_19.tar.bz2 && tar xf kokoro-int8-en-v0_19.tar.bz2 && rm kokoro-int8-en-v0_19.tar.bz2"
+    },
+    "files": [
+        "dist",
+        "kokoro-int8-en-v0_19",
+        "LICENSE",
+        "NOTICE",
+        "README.md"
+    ],
+    "n8n": {
+        "n8nNodesApiVersion": 1,
+        "nodes": [
+            "dist/nodes/TtsBro/TtsBro.node.js"
+        ]
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^6.21.0",
+        "@typescript-eslint/parser": "^6.21.0",
+        "@types/node": "^22.10.2",
+        "eslint": "^8.57.0",
+        "gulp": "^4.0.2",
+        "n8n-workflow": "^1.72.0",
+        "prettier": "^3.4.2",
+        "typescript": "^5.7.2"
+    },
+    "dependencies": {
+        "sherpa-onnx": "^1.10.42"
+    },
+    "peerDependencies": {
+        "n8n-workflow": "*"
+    }
+}

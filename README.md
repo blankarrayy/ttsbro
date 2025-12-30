@@ -21,7 +21,21 @@
 
 ## Installation
 
-### Option 1: Docker (Recommended)
+### Option 1: n8n Community Nodes (Recommended)
+
+1. Go to **Settings > Community Nodes**
+2. Enter `n8n-nodes-ttsbro`
+3. Click **Install**
+
+#### Video Tutorials
+
+| Tutorial | Link |
+|----------|------|
+| **How to Install TTS Bro Node in n8n** | [![How to Install](https://img.youtube.com/vi/rdHrMLq8-uc/0.jpg)](https://youtu.be/rdHrMLq8-uc) |
+| **How to use TTS bro node in n8n** | [![How to Use](https://img.youtube.com/vi/ySEkWTlUGA8/0.jpg)](https://youtu.be/ySEkWTlUGA8) |
+| **How to build a selfhosted TTS API** | [![How to build API](https://img.youtube.com/vi/As3JxnDZY6s/0.jpg)](https://youtu.be/As3JxnDZY6s) |
+
+### Option 2: Docker
 
 Use the provided Dockerfile and docker-compose.yml:
 
@@ -32,12 +46,6 @@ npm run download-model
 # Build and run
 docker-compose up --build
 ```
-
-### Option 2: n8n Community Nodes
-
-1. Go to **Settings > Community Nodes**
-2. Enter `n8n-nodes-ttsbro`
-3. Click **Install**
 
 ### Option 3: Manual Installation
 
